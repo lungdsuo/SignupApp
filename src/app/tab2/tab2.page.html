@@ -1,9 +1,74 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Sign Up
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-header>
+
+      <ion-card-title>Enter your details</ion-card-title>
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+
+      <ion-list>
+        <ion-radio-group>
+          <ion-list-header>
+            <ion-label>Sex</ion-label>
+          </ion-list-header>
+
+          <ion-item>
+            <ion-label>Male</ion-label>
+            <ion-radio slot="start" value="male" checked></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Female</ion-label>
+            <ion-radio slot="start" value="female"></ion-radio>
+          </ion-item>
+
+
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-item>
+        <ion-label>Subscribe to newsletter?</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+      <ion-button slot="start" name="star" color="success" class="ion-activatable">
+        Sign Up
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-button>
+
+      <ion-button slot="end" name="star" color="success" class="ion-activatable">
+        Reset
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+
+
+</ion-content>
