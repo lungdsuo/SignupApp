@@ -17,29 +17,33 @@
     </ion-card-header>
 
     <ion-card-content>
+      <form [formGroup]="form" (ngSubmit)="login()">
+
+        <ion-item>
+          <ion-label position="floating">Number1</ion-label>
+          <ion-input formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Number2</ion-label>
+          <ion-input formControlName="password"></ion-input>
+        </ion-item>
+        <!--    <ion-item>
+          <ion-label position="floating">Result</ion-label>
+          <ion-input formControlName="answer"></ion-input>
+        </ion-item> -->
 
 
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
+        <ion-button slot="start" (click)="login()" color="success" class="ion-activatable">
+          Login
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-button>
 
-
-
-      <ion-button slot="start" name="star" color="success" class="ion-activatable">
-        Login
-        <ion-ripple-effect></ion-ripple-effect>
-      </ion-button>
-
-      <ion-button slot="end" name="star" color="success" class="ion-activatable">
-        Reset
-        <ion-ripple-effect></ion-ripple-effect>
-      </ion-button>
-
+        <ion-button slot="end" (click)="reset()" color="success" class="ion-activatable">
+          Reset
+          <ion-ripple-effect></ion-ripple-effect>
+        </ion-button>
+      </form>
+      {{answer}}
     </ion-card-content>
   </ion-card>
 

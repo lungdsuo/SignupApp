@@ -1,5 +1,7 @@
 {
   "name": "SignupApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
